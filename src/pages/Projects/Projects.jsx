@@ -2,20 +2,24 @@ import { ReactLenis } from "lenis/react";
 import { useTransform, motion, useScroll } from "framer-motion";
 import { useRef, useEffect } from "react";
 import PropTypes from "prop-types";
+import fileSystemImg from "@/assets/images/file-system.png";
+import woodexindoImg from "@/assets/images/woodexindo.png";
+import previousPortfolioImg from "@/assets/images/previous-portfolio.png";
+import windowshopImg from "@/assets/images/windowshop.png";
 
 const projects = [
   {
     title: "Secure File Sharing System🔐",
     description:
       "Designed and implemented a secure file system in Go using cryptographic primitives to support encrypted storage, secure sharing, and access revocation. The system ensures confidentiality, integrity and authenticity.",
-    image: "src/assets/images/file-system.png",
+    image: fileSystemImg,
     color: "#8f89ff",
   },
   {
     title: "Woodexindo Furniture Website🪑",
     description:
       "A website for a company that produce and sell wood furniture.",
-    image: "src/assets/images/woodexindo.png",
+    image: woodexindoImg,
     color: "#fff",
     githubLink: null,
     liveLink: "https://www.woodexindo.com",
@@ -23,15 +27,16 @@ const projects = [
   {
     title: "Personal Portfolio✨",
     description: "The first website portfolio I built 💻✨",
-    image: "src/assets/images/previous-portfolio.png",
+    image: previousPortfolioImg,
     color: "#fff",
     githubLink: "https://github.com/agathafels/agathasantoso",
     liveLink: "https://agathafels.github.io/agathasantoso/",
   },
   {
     title: "Window Shopping Website🛍️",
-    description: "Window Shop is a virtual mall built for effortless, no-pressure browsing. User can make account and publish the store and product!",
-    image: "src/assets/images/windowshop.png",
+    description:
+      "Window Shop is a virtual mall built for effortless, no-pressure browsing. User can make account and publish the store and product!",
+    image: windowshopImg,
     color: "#fff",
     githubLink: "https://github.com/dpshah1/window-shopping",
     liveLink: "https://window-shopping.vercel.app",
